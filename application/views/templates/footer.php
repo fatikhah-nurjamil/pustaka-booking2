@@ -2,9 +2,11 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Web Programming Univ. BSI with Bootstrap SB Admin 2 <?= date('Y'); ?></span>
+            <span>
+                Copyright &copy; Web Programming Univ. BSI with Bootstrap SB Admin 2 <?= date('Y'); ?>
+            </span>
         </div>
-        </div>
+    </div>
 </footer>
 <!-- End of Footer -->
 </div>
@@ -16,6 +18,7 @@
 <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
 </a>
+
 <!-- Logout Modal-->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -35,16 +38,18 @@
     </div>
 </div>
 <!-- Bootstrap core JavaScript-->
+<script src="<?= base_url('assets/'); 
+?>vendor/jquery/jquery.min.js"></script>
 
-<script src="<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js"></script>
-<script src="<?= base_url('assets/'); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url('assets/'); 
+?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
-
 <script src="<?= base_url('assets/'); ?>vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <!-- Custom scripts for all pages-->
 <script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
+
 <script>
 $('.custom-file-input').on('change', function() {
     let fileName = $(this).val().split('\\').pop();
@@ -54,11 +59,7 @@ $('.custom-file-input').on('change', function() {
         $("#table-datatable").dataTable();
         });
         $('.alert-message').alert().delay(3500).slideUp('slow');
-</script>
-
-</body>
-
-</html>
-
-
+        </script>
+        </body>
+        </html>
 
